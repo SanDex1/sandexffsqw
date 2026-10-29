@@ -75,6 +75,8 @@ h2 { margin-top: 6px; font-size: 25px; }
 }
 .contact h2 { font-size: 22px; }
 .contact .button { width: 100%; }
+.contact .channel-button { background: rgba(255, 119, 174, .1); color: var(--ink); border: 1px solid rgba(255, 193, 216, .28); }
+.contact .channel-button:hover { background: rgba(255, 119, 174, .2); }
 .contact .copy-status { margin-bottom: -8px; }
 footer {
 	min-height: 36px;
