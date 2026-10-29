@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="theme-color" content="#1b1019">
+	<meta name="description" content="Ксюша — топ-1 девочка. Неофициальные суперфакты, хорошее настроение и немного неоновой магии.">
+	<title>Ксюша — топ-1 девочка</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mini-app.css">
+</head>
+<body>
+	<header class="topbar page">
+		<a class="brand" href="#home" aria-label="Ксюша, на главную">
+			<span class="brand-mark" aria-hidden="true">К.</span>
+			<span>Ксюша</span>
+		</a>
+	</header>
+
+	<main>
+		<section class="hero page" id="home" aria-labelledby="hero-title">
+			<div class="hero-content" id="about">
+				<div class="eyebrow">Главная героиня // Ксюша</div>
+				<h1 id="hero-title">Ксюша —<br><span>топ-1!</span></h1>
+				<p class="hero-copy">Официально неофициальная страница самой классной девочки. Тут немного неона, много хорошего вайба и факты, которые звучат подозрительно правдоподобно.</p>
+				<div class="hero-actions">
+					<a class="button" href="facts.html">Узнать почему <span aria-hidden="true">↗</span></a>
+					<a class="text-link" href="contact.html">Передать комплимент</a>
+				</div>
+				<div class="availability">Рейтинг: топ-1 без конкурса</div>
+			</div>
+			<div class="hero-visual">
+				<img class="hero-image" src="ксюша.jpg" alt="Ксюша на селфи" fetchpriority="high">
+				<div class="image-note">Ксюша вошла в чат. Уровень вайба повышен.</div>
+			</div>
+		</section>
+
+		<section class="services page" id="facts" aria-labelledby="facts-title">
+			<div class="section-heading">
+				<div>
+					<div class="section-kicker">Досье // топ-1</div>
+					<h2 id="facts-title">Коротко о легенде</h2>
+				</div>
+				<p class="section-intro">Факты шуточные, титул — совершенно серьёзный.</p>
+			</div>
+			<div class="service-list">
+				<article class="service">
+					<span class="service-number">01 / СУПЕРСИЛА</span>
+					<h3>Плюс сто к настроению</h3>
+					<p>Появление Ксюши — и даже понедельник уже не так страшен.</p>
+				</article>
+				<article class="service">
+					<span class="service-number">02 / РЕДКОСТЬ</span>
+					<h3>Экземпляр один</h3>
+					<p>Такой уровень обаяния в обычной комплектации не встречается.</p>
+				</article>
+				<article class="service">
+					<span class="service-number">03 / РЕЙТИНГ</span>
+					<h3>Топ-1 девочка</h3>
+					<p>Жюри: друзья, близкие и здравый смысл. Результат единогласный.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="contact page" id="contact" aria-labelledby="contact-title">
+			<div>
+				<div class="section-kicker">Передай дальше</div>
+				<h2 id="contact-title">Хороший комплимент должен быть услышан.</h2>
+			</div>
+			<a class="button" href="contact.html">Выбрать комплимент <span aria-hidden="true">↗</span></a>
+		</section>
+	</main>
+	<nav class="mini-tabs" aria-label="Разделы приложения">
+		<a class="mini-tab" aria-current="page" href="sute.html"><span class="mini-tab-icon" aria-hidden="true">⌂</span><span>Главная</span></a>
+		<a class="mini-tab" href="about.html"><span class="mini-tab-icon" aria-hidden="true">◎</span><span>Ксюша</span></a>
+		<a class="mini-tab" href="facts.html"><span class="mini-tab-icon" aria-hidden="true">✦</span><span>Факты</span></a>
+		<a class="mini-tab" href="contact.html"><span class="mini-tab-icon" aria-hidden="true">♡</span><span>Комплимент</span></a>
+	</nav>
+
+	<footer class="page">
+		<a class="brand" href="sute.html"><span class="brand-mark" aria-hidden="true">К.</span><span>Ксюша</span></a>
+		<span class="footer-note">© <span id="year"></span> Ксюша · Топ-1 без конкурса</span>
+	</footer>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+	</script>
+	<script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+	<script src="mini-app.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+	<script src="three-background.js" defer></script>
+	<script src="cursor.js" defer></script>
+</body>
+</html>
